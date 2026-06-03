@@ -6,7 +6,7 @@
 [![Paper](https://img.shields.io/badge/📜_Paper-ArXiv-red)](https://arxiv.org/abs/2606.03540)
 [![License](https://img.shields.io/badge/📄_License-Apache_2.0-green)](LICENSE)
 [![Python](https://img.shields.io/badge/🐍_Python-3.10+-blue)]()
-[![CN-Version](https://img.shields.io/badge/🇨🇳_Paper-README_CN-blue)](Paper_CN.md)
+[![CN-Version](https://img.shields.io/badge/🇨🇳_Paper-中文版-blue)](https://github.com/wz-zhao/Attend-to-Anything/blob/main/AAM_ICML2026_Chinese.pdf)
 
 </div>
 
