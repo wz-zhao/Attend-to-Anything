@@ -1,5 +1,5 @@
-#  👀 Attend to Anything Model (AAM) 
-> **The official implementation of [ICML 2026] [Attend to Anything: Foundation Model for Unified Human Attention Modeling (Saliency Prediction)](https://icml.cc/virtual/2026/poster/61103)**
+#  👀 [ICML 2026] Attend to Anything Model (AAM) 
+> **The official implementation of [Attend to Anything: Foundation Model for Unified Human Attention Modeling (Saliency Prediction)](https://icml.cc/virtual/2026/poster/61103)**
 
 <div align="center">
   
