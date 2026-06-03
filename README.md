@@ -1,5 +1,5 @@
 #  👀 Attend to Anything Model (AAM) 
-> **The official implementation of [ICML 2026] [Attend to Anything: Foundation Model for Unified Human Attention Modeling (Saliency Prediction)](https://icml.cc/virtual/2026/poster/61103)**
+> **The official implementation of [ICML 2026] [Attend to Anything: Foundation Model for Unified Human Attention Modeling](https://icml.cc/virtual/2026/poster/61103)**
 
 <div align="center">
   
@@ -19,7 +19,7 @@
 
 
 
-## 🌟 The first Unified Foundation Model for Saliency Prediction (Attention Modeling)
+## 🌟 The first Unified Foundation Model for Attention Modeling (Saliency Prediction)
 
 
 -  Human attention (saliency prediction) selectively focuses on informative regions when perceiving images, videos, and audio-visual scenes. However, **existing attention and saliency models are often tailored to specific scenarios, such as static images, videos, or isolated audio-visual setting**s, limiting their generalization in real-world applications.
