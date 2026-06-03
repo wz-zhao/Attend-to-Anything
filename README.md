@@ -19,7 +19,7 @@
 
 
 
-## 🌟 The first Unified Foundation Model for Attention Modeling (Saliency Prediction)
+## 🌟 The first Unified Foundation Model for Attention Modeling
 
 
 -  Human attention (saliency prediction) selectively focuses on informative regions when perceiving images, videos, and audio-visual scenes. However, **existing attention and saliency models are often tailored to specific scenarios, such as static images, videos, or isolated audio-visual setting**s, limiting their generalization in real-world applications.
