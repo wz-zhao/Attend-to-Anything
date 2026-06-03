@@ -42,23 +42,19 @@
 <table>
   <tr>
     <td align="center"><b>🌐 Unified Foundation Model</b></td>
-    <td>AAM unifies human attention modeling across <b>images, videos, and audio-visual scenes</b> within a single multi-modal framework.</td>
+    <td>AAM unifies human attention modeling across <b>images, videos, and audio-visual scenes</b>.</td>
   </tr>
   <tr>
     <td align="center"><b>🧠 Cognitive Entailment Learning</b></td>
-    <td>AAM models attention as a <b>general-to-specific cognitive entailment process</b> in hyperbolic space for flexible cross-scene generalization.</td>
+    <td>AAM models attention as a <b>general-to-specific cognitive entailment process</b> in hyperbolic space.</td>
   </tr>
   <tr>
     <td align="center"><b>🌊 Fokker–Planck Dynamics</b></td>
-    <td>AAM bridges static image attention and dynamic attention through continuous temporal attention evolution.</td>
+    <td>AAM <b>bridges static and dynamic attention</b> through continuous temporal attention evolution.</td>
   </tr>
   <tr>
     <td align="center"><b>📦 Attention-1.75M Corpus</b></td>
-    <td>We curate a standardized large-scale corpus with <b>1.75M fixation instances</b> across diverse modalities and scenarios.</td>
-  </tr>
-  <tr>
-    <td align="center"><b>🚀 SOTA & Efficient</b></td>
-    <td>AAM achieves state-of-the-art results on <b>16 benchmarks</b>, with ~<b>6%</b> average improvement and ~<b>4×</b> faster video inference.</td>
+    <td>A standardized large-scale corpus with <b>1.75M fixation instances</b> across diverse scenarios.</td>
   </tr>
 </table>
 
