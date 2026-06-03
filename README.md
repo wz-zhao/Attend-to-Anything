@@ -170,6 +170,22 @@ AAM is trained on a unified collection of **image-based**, **video-based**, and 
 
 ## ⚙️ Checkpoint
 
+<div align="center">
+
+[![Checkpoint](https://img.shields.io/badge/Download-AAM%20Checkpoint-red?style=for-the-badge&logo=googledrive)](https://drive.google.com/file/d/1ttIONm6Mzx2n5d1cqRXrq95hHbYT32Bt/view?usp=drive_link)
+
+<br>
+
+| Component | Source / Installation |
+|:--:|:--|
+| Visual Encoder | [DINOv3](https://github.com/facebookresearch/dinov3) |
+| Text Encoder | `pip install git+https://github.com/openai/CLIP.git` |
+| Audio Encoder | `pip install wav2clip` |
+
+</div>
+
+
+</div>
 
 ## 💥 Visual Results
 
