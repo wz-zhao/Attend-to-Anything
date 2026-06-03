@@ -1,6 +1,7 @@
 #  👀 [ICML 2026] Attend to Anything Model (AAM) 
 > **The official implementation of [Attend to Anything: Foundation Model for Unified Human Attention Modeling (Saliency Prediction)](https://icml.cc/virtual/2026/poster/61103)**
 
+
 <div align="center">
   
 [![Paper](https://img.shields.io/badge/📜_Paper-ArXiv-red)](https://arxiv.org/abs/2606.03540)
@@ -10,11 +11,7 @@
 
 </div>
 
-
-
 ---
-
-<br>
 
 <div align="center">
   <img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/actioncliptest00001_2_pred_overlay.gif?raw=true" width="16%"><img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/actioncliptest00005_3_pred_overlay.gif?raw=true" width="16%"><img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/actioncliptest00006_3_pred_overlay.gif?raw=true" width="16%"><img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/pred_overlay_pair_Diving-Side-001-Diving-Side-004__Golf-Swing-Back-001-Golf-Swing-Back-004.gif?raw=true" width="16%"><img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/pred_overlay_pair_Golf-Swing-Back-005-Lifting-002__Riding-Horse-001-Riding-Horse-004.gif?raw=true" width="16%"><img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/pred_overlay_pair_Run-Side-001-Run-Side-004__SkateBoarding-Front-001-SkateBoarding-Front-004.gif?raw=true" width="16%">
@@ -24,21 +21,18 @@
 
 ## 🌟 The first Unified Foundation Model for Attention Modeling (Saliency)
 
+<div align="center">
+  <img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/fig_intro.png?raw=true" height="260">
+  <img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/fig_data.png?raw=true" height="260">
+</div>
 
--  Human attention (saliency prediction) selectively focuses on informative regions when perceiving images, videos, and audio-visual scenes. However, **existing attention and saliency models are often tailored to specific scenarios, such as static images, videos, or isolated audio-visual setting**s, limiting their generalization in real-world applications.
+
+-  Human attention (saliency prediction) selectively focuses on informative regions when perceiving images, videos, and audio-visual scenes. However, **existing attention and saliency models are often tailored to specific scenarios**, such as static images, videos, or isolated audio-visual settings, limiting their generalization in real-world applications.
 
 -  We propose the **Attend to Anything Model (AAM)**, a unified foundation model for attention understanding across images, videos, and audio-visual scenes. AAM formulates attention as a **cognitive entailment relationship**, enabling prompt-driven reasoning over both salient regions and hierarchical task relationships. To connect static and dynamic attention, AAM further models video attention evolution as a temporally diffusive process inspired by fluid dynamics.
 
 -  Experiments on **16 public benchmarks** show that AAM outperforms state-of-the-art methods by about **6%** on diverse attention and saliency tasks, while achieving a **4× speedup** in video inference. These results demonstrate AAM’s generality and efficiency as a foundation model for human attention prediction.
 
----
-<!-- <p align="center">
-  <img src="https://github.com/wz-zhao/Samba-plus/blob/main/Figures/Fig_intro_1.png" width="70%">
-</p>
-
-<p align="center">
-  <img src="https://github.com/wz-zhao/Samba-plus/blob/main/Figures/fig_sns_1.png" width="70%">
-</p> -->
 
 ## ✨ Highlights
 
@@ -64,7 +58,9 @@
 
 ## 🧩 Framework Overview
 
----
+<div align="center">
+  <img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/fig_overview.png?raw=true" width="95%">
+</div>
 
 ## 📂 Datasets
 
@@ -73,10 +69,19 @@
 
 ---
 
-## ✨  Visual Results
+## 💥 Visual Results
+
+<div align="center">
+  <img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/fig_visual_app_01.png?raw=true" width="75%">
+</div>
 
 
----
+## 🗯️  Robustness experiment
+
+<div align="center">
+  <img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/fig_ab_2.png?raw=true" width="75%">
+</div>
+
 
 ## ⚙️ Environment Setup
 
