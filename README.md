@@ -62,12 +62,114 @@
   <img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/fig_overview.png?raw=true" width="95%">
 </div>
 
+
 ## 📂 Datasets
 
-| Task | Training Datasets | Testing Datasets | Download |
-|------|-------------------|------------------|----------|
+### Training Datasets Used in AAM
 
----
+AAM is trained on a unified collection of **image-based**, **video-based**, and **audio-visual** saliency datasets, covering diverse scenarios such as natural scenes, web pages, e-commerce, movies, sports, and multi-modal audio-visual scenes.
+
+| Modality           | Dataset     | Publication                | Domain         |         Scale | Resolution  |  Frames |
+| :----------------- | :---------- | :------------------------- | :------------- | ------------: | :---------- | ------: |
+| 🖼️ Image          | SALICON     | CVPR 2015                  | Natural scenes | 15,000 images | 640 × 480   |       - |
+| 🖼️ Image          | MIT1003     | ICCV 2009                  | Natural scenes |  1,003 images | Varied      |       - |
+| 🖼️ Image          | CAT2000     | arXiv 2015                 | Natural scenes |  2,000 images | 1080 × 1920 |       - |
+| 🖼️ Image          | OSIE        | Journal of Vision 2014     | Natural scenes |    700 images | 800 × 600   |       - |
+| 🖼️ Image          | FIGRIM      | Vision Research 2015       | Natural scenes |  2,787 images | 1366 × 768  |       - |
+| 🖼️ Image          | U-EYE       | ACM CHI 2023               | Web pages      |  1,583 images | Varied      |       - |
+| 🖼️ Image          | FiWI        | ECCV 2014                  | Web pages      |    149 images | 1366 × 768  |       - |
+| 🖼️ Image          | SalECI      | CVPR 2022                  | E-commerce     |    871 images | 720 × 720   |       - |
+| 🎞️ Video          | DHF1K       | CVPR 2018                  | Natural scenes |  1,000 videos | 640 × 360   | 582,605 |
+| 🎞️ Video          | Hollywood-2 | TPAMI 2015                 | Movies         |  1,707 videos | 720 × 480   | 487,207 |
+| 🎞️ Video          | UCF Sports  | TPAMI 2015                 | Sports         |    150 videos | 720 × 480   |   9,900 |
+| 🎞️ Video          | LEDOV       | ECCV 2018                  | Natural scenes |    538 videos | 1280 × 720  | 179,336 |
+| 🔊🎞️ Audio-Visual | DIEM        | Cognitive Computation 2011 | Movies         |     84 videos | 1280 × 720  | 240,452 |
+| 🔊🎞️ Audio-Visual | Coutrot-1   | Journal of Vision 2012     | People         |     60 videos | 1280 × 720  |   9,564 |
+| 🔊🎞️ Audio-Visual | Coutrot-2   | IJCV 2014                  | Natural scenes |     40 videos | 1280 × 720  |  25,223 |
+| 🔊🎞️ Audio-Visual | ETMD        | SPIC 2020                  | Movies         |     30 videos | 1280 × 720  | 109,788 |
+| 🔊🎞️ Audio-Visual | SumMe       | ECCV 2014                  | Sports         |     25 videos | 640 × 360   |  52,744 |
+
+### Training Dataset Download
+
+<div align="center">
+
+|           Modality           |                                                                                                  Download                                                                                                 |
+| :--------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|      🖼️ Image Saliency     | [![Image Data](https://img.shields.io/badge/Download-Image%20Datasets-blue?style=for-the-badge\&logo=googledrive)](https://drive.google.com/file/d/1h3vnUYwzhic11CLOoTL_x0tkYkh3CbJr/view?usp=drive_link) |
+|      🎞️ Video Saliency     |                           [![Video Data](https://img.shields.io/badge/Download-Video%20Datasets-orange?style=for-the-badge\&logo=github)](https://github.com/wenguanwang/DHF1K)                           |
+| 🔊🎞️ Audio-Visual Saliency |                     [![Audio-Visual Data](https://img.shields.io/badge/Download-Audio--Visual%20Datasets-purple?style=for-the-badge\&logo=github)](https://github.com/oraclefina/MSPI)                    |
+
+</div>
+
+
+### Downloadable Collection of Saliency / Human Attention Datasets
+
+#### 🌍 Saliency Dataset Zoo
+
+<table>
+  <tr>
+    <td width="18%" align="center"><b>Category</b></td>
+    <td width="82%" align="center"><b>Datasets</b></td>
+  </tr>
+
+  <tr>
+    <td align="center"><b>🖼️ Image Saliency</b></td>
+    <td>
+      <a href="http://saliency.mit.edu/BenchmarkIMAGES.zip">MIT300</a> ·
+      <a href="http://saliency.mit.edu/trainSet.zip">CAT2000</a> ·
+      <a href="https://people.csail.mit.edu/tjudd/WherePeopleLook/ALLSTIMULI.zip">MIT1003</a> ·
+      <a href="http://figrim.mit.edu/index_eyetracking.html">FIGRIM</a> ·
+      <a href="https://github.com/NUS-VIP/saliency-in-crowd?tab=readme-ov-file">EyeCrowd</a> ·
+      <a href="https://www-users.cse.umn.edu/~qzhao/webpage_saliency.html">FiWI</a> ·
+      <a href="https://github.com/YueJiang-nj/UEyes-CHI2023">U-EYE</a> ·
+      <a href="https://people.csail.mit.edu/tjudd/LowRes/">MIT Low-resolution</a> ·
+      <a href="https://github.com/NUS-VIP/predicting-human-gaze-beyond-pixels/tree/master">OSIE</a> ·
+      <a href="https://live.ece.utexas.edu/research/doves/">DOVES</a> ·
+      <a href="https://github.com/TsotsosLab/AIM">Toronto</a> ·
+      <a href="https://opendatalab.org.cn/OpenDataLab/SALICON">SALICON</a> ·
+      <a href="https://saliencydetection.net/dut-omron/">DUT-OMRON</a> ·
+      <a href="https://sites.google.com/view/cocosearch/coco-freeview">COCOFreeview</a> ·
+      <a href="https://osf.io/cn5yp/overview">DAEMONS</a> ·
+      <a href="https://github.com/leafy-lee/E-commercial-dataset">SalECI</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center"><b>🎞️ Video Saliency</b></td>
+    <td>
+      <a href="https://github.com/wenguanwang/DHF1K">DHF1K</a> ·
+      <a href="https://www.di.ens.fr/~laptev/actions/hollywood2/">Hollywood-2</a> ·
+      <a href="https://www.crcv.ucf.edu/data/UCF_Sports_Action.php">UCF Sports</a> ·
+      <a href="https://github.com/remega/LEDOV-eye-tracking-database?tab=readme-ov-file">LEDOV</a> ·
+      <a href="http://ilab.usc.edu/bu/compress/">CRCNS</a> ·
+      <a href="https://videoprocessing.ai/benchmarks/video-saliency-prediction.html">MSU Video Saliency Prediction</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center"><b>🔊🎞️ Audio-Visual Saliency</b></td>
+    <td>
+      <a href="http://antoinecoutrot.magix.net/public/databases.html">Coutrot Database 1</a> ·
+      <a href="http://antoinecoutrot.magix.net/public/databases.html">Coutrot Database 2</a> ·
+      <a href="https://videoprocessing.ai/benchmarks/video-saliency-prediction.html">SAVAM</a> ·
+      <a href="https://github.com/MinglangQiao/Sports_saliency">Sports Saliency</a> ·
+      <a href="https://challenges.videoprocessing.ai/challenges/video-saliency-prediction-participate.html">AViMoS</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center"><b>🚗 Driving Attention</b></td>
+    <td>
+      <a href="https://aimagelab.ing.unimore.it/imagelab/page.asp?IdPage=8">DRVE</a> ·
+      <a href="https://github.com/JWFangit/LOTVS-DADA">DADA-2000</a> ·
+      <a href="https://github.com/yuli1102/eye_tracker_data">Eye Tracker Data</a> ·
+      <a href="https://paperswithcode.com/dataset/bdd-a">BDD-A</a>
+    </td>
+  </tr>
+</table>
+
+## ⚙️ Checkpoint
+
 
 ## 💥 Visual Results
 
@@ -82,8 +184,6 @@
   <img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/fig_ab_2.png?raw=true" width="75%">
 </div>
 
-
-## ⚙️ Environment Setup
 
 ## 📚 Citation
 
