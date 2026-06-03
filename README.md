@@ -12,11 +12,14 @@
 
 
 
-<!-- <p align="center">
-  <img src="https://github.com/wz-zhao/Samba-plus/blob/main/Figures/Fig_show_1.png" width="90%"> -->
 ---
 
+<br>
 
+<div align="center">
+  <img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/actioncliptest00001_2_pred_overlay.gif?raw=true" width="16%"><img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/actioncliptest00005_3_pred_overlay.gif?raw=true" width="16%"><img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/actioncliptest00006_3_pred_overlay.gif?raw=true" width="16%"><img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/pred_overlay_pair_Diving-Side-001-Diving-Side-004__Golf-Swing-Back-001-Golf-Swing-Back-004.gif?raw=true" width="16%"><img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/pred_overlay_pair_Golf-Swing-Back-005-Lifting-002__Riding-Horse-001-Riding-Horse-004.gif?raw=true" width="16%"><img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/pred_overlay_pair_Run-Side-001-Run-Side-004__SkateBoarding-Front-001-SkateBoarding-Front-004.gif?raw=true" width="16%">
+  <img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/pred_overlay_pair_Swing-Bench-001-Swing-Bench-004__Swing-Bench-005-Swing-SideAngle-002.gif?raw=true" width="16%"><img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/pred_overlay_pair_Swing-SideAngle-003-Walk-Front-002__Walk-Front-003-Walk-Front-005.gif?raw=true" width="16%"><img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/pred_overlay_pair_V19_Singing1_snip_000016-V20_Singing2_snip_000019__V20_Singing2_snip_000020-V20_Singing2_snip_000023.gif?raw=true" width="16%"><img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/pred_overlay_pair_V21_Tap1_snip_000032-V26_Piano2_snip_000035__V26_Piano2_snip_000036-V28_Dog1_snip_000039.gif?raw=true" width="16%"><img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/pred_overlay_pair_V40_Guitar5_snip_000056-V40_Guitar5_snip_000059__V42_Violin2_snip_000060-V42_Violin2_snip_000063.gif?raw=true" width="16%"><img src="https://github.com/wz-zhao/Attend-to-Anything/blob/main/Fig/pred_overlay_pair_V7_Basketball2_snip_000088-V7_Basketball2_snip_000091__V7_Basketball2_snip_000092-V7_Basketball2_snip_000092.gif?raw=true" width="16%">
+</div>
 
 
 ## 🌟 The first Unified Foundation Model for Attention Modeling (Saliency)
