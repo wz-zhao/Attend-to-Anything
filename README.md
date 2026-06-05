@@ -63,6 +63,75 @@
 </div>
 
 
+## Code Usage
+
+### Repository Layout
+
+```text
+.
+??? train.py              # Main training entry
+??? ablation.py           # Prompt ablation training/evaluation entry
+??? dpt.py                # AAM DPT model and decoder head
+??? Video_NSA.py          # Temporal video module used by DPTHead
+??? audio_backbone.py     # Audio encoder and audio-visual fusion
+??? dataloader_all.py     # Image/video/audio dataloader builders
+??? data_process_uni.py   # Static image datasets
+??? dataset_video.py      # Video datasets
+??? dataset_audio.py      # Audio-video datasets
+??? function.py           # Training, validation, and saliency export loops
+??? loss.py               # Saliency losses and metrics
+??? prompts.py            # Dataset prompt templates shared by train/ablation
+??? training_utils.py     # DDP, checkpoint, prompt embedding, and optimizer helpers
+??? dinov3/               # Local DINOv3 dependency
+```
+
+### Installation
+
+```bash
+pip install -r requirements.txt
+pip install git+https://github.com/openai/CLIP.git
+pip install wav2clip
+```
+
+The current training entry is configured for NPU distributed training. If you run on CUDA or CPU, review `setup_distributed_npu()` in `training_utils.py` before launching training.
+
+### Data and Checkpoints
+
+Large files are intentionally excluded from git. Put datasets and checkpoints in local folders, then pass their paths through command-line arguments or environment variables.
+
+```bash
+# Linux/macOS
+export A2_DATA_ROOT=/path/to/datasets
+export A2_AUDIO_ROOT=/path/to/datasets/Audio
+
+# Windows PowerShell
+$env:A2_DATA_ROOT="D:\datasets\AAM"
+$env:A2_AUDIO_ROOT="D:\datasets\AAM\Audio"
+```
+
+Default locations used by the code:
+
+| Item | Default / Argument |
+| :-- | :-- |
+| Dataset root | `datasets/` or `--data_root` |
+| Audio dataset root | `<A2_DATA_ROOT>/Audio` or `A2_AUDIO_ROOT` |
+| DINOv3 checkpoint | `--dino_ckpt` |
+| Local DINOv3 repo | `--repo_dir ./dinov3` |
+| Training outputs | `--save_root ./runs` |
+
+### Training
+
+```bash
+python train.py \
+  --data_root /path/to/datasets \
+  --repo_dir ./dinov3 \
+  --dino_ckpt ./web_pth/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth \
+  --dino_size l \
+  --save_root ./runs \
+  --batch_size 32 \
+  --num_workers 8
+```
+
 ## 📂 Datasets
 
 ### Training Datasets Used in AAM
@@ -206,5 +275,5 @@ AAM is trained on a unified collection of **image-based**, **video-based**, and 
 If you find this repository useful, please use the following BibTeX entry for citation and give us a star⭐.
 
 ```bibtex
-
-
+# BibTeX will be updated after the official citation metadata is finalized.
+```
