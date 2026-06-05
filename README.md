@@ -69,20 +69,20 @@
 
 ```text
 .
-??? train.py              # Main training entry
-??? ablation.py           # Prompt ablation training/evaluation entry
-??? dpt.py                # AAM DPT model and decoder head
-??? Video_NSA.py          # Temporal video module used by DPTHead
-??? audio_backbone.py     # Audio encoder and audio-visual fusion
-??? dataloader_all.py     # Image/video/audio dataloader builders
-??? data_process_uni.py   # Static image datasets
-??? dataset_video.py      # Video datasets
-??? dataset_audio.py      # Audio-video datasets
-??? function.py           # Training, validation, and saliency export loops
-??? loss.py               # Saliency losses and metrics
-??? prompts.py            # Dataset prompt templates shared by train/ablation
-??? training_utils.py     # DDP, checkpoint, prompt embedding, and optimizer helpers
-??? dinov3/               # Local DINOv3 dependency
+|-- train.py              # Main training entry
+|-- ablation.py           # Prompt ablation training/evaluation entry
+|-- dpt.py                # AAM DPT model and decoder head
+|-- Video_NSA.py          # Temporal video module used by DPTHead
+|-- audio_backbone.py     # Audio encoder and audio-visual fusion
+|-- dataloader_all.py     # Image/video/audio dataloader builders
+|-- data_process_uni.py   # Static image datasets
+|-- dataset_video.py      # Video datasets
+|-- dataset_audio.py      # Audio-video datasets
+|-- function.py           # Training, validation, and saliency export loops
+|-- loss.py               # Saliency losses and metrics
+|-- prompts.py            # Dataset prompt templates shared by train/ablation
+|-- training_utils.py     # DDP, checkpoint, prompt embedding, and optimizer helpers
+`-- dinov3/               # Local DINOv3 dependency
 ```
 
 ### Installation
@@ -118,6 +118,63 @@ Default locations used by the code:
 | DINOv3 checkpoint | `--dino_ckpt` |
 | Local DINOv3 repo | `--repo_dir ./dinov3` |
 | Training outputs | `--save_root ./runs` |
+
+
+
+### Dataset Directory Format
+
+Set `--data_root` or `A2_DATA_ROOT` to the directory that contains the dataset folders below. The dataloader resolves paths relative to this root.
+
+```text
+<A2_DATA_ROOT>/
+
+Image datasets with {train_id.csv, val_id.csv, train/, val/} layout:
+  OSIE_256/
+  CAT2000_256/
+  MIT1003_256/
+
+Image datasets with {train_ids.csv, val_ids.csv, train/, val/} layout:
+  SalEC/
+
+SALICON layout:
+  salicon_256/
+    train_ids.csv
+    val_ids.csv
+    stimuli/train, stimuli/val
+    saliency/train, saliency/val
+    fixations/train_edit, fixations/val_edit
+
+UI and webpage layouts:
+  datasets_UI_256/
+    train_id.csv, val_id.csv
+    train/train_images, train/train_saliency, train/train_fixation
+    val/val_images, val/val_saliency, val/val_fixation
+  fiwi_256/
+    train_id.csv, val_id.csv
+    fiwi_train/stimuli, fiwi_train/saliency, fiwi_train/fixations
+    fiwi_val/stimuli, fiwi_val/saliency, fiwi_val/fixations
+
+FIGRIM layout:
+  Image/FIGRIM/
+    Targets/figrim_data.csv, Targets/Targets, Targets/FIXATIONMAPS
+    Fillers/figrim_data.csv, Fillers/Fillers, Fillers/FIXATIONMAPS
+
+Video datasets:
+  DHF1K/DHF1K_train, DHF1K/DHF1K_val
+  Hollywood2_actions/training, Hollywood2_actions/testing
+  ucf-003/training, ucf-003/testing
+  LEDOV/LEDOV_TrainValidVideoList.xlsx
+  LEDOV/LEDOV_TestVideoList.xlsx
+  LEDOV/image, LEDOV/mask, LEDOV/fixation
+
+Audio-visual datasets:
+  Audio/fold_lists
+  Audio/video_frames/<dataset_name>
+  Audio/video_audio/<dataset_name>
+  Audio/annotations/<dataset_name>
+```
+
+Audio-visual dataset names currently used by the loader are `DIEM`, `Coutrot_db1`, `Coutrot_db2`, `AVAD`, `ETMD_av`, and `SumMe`. The active training/validation dataset mix is controlled in `dataloader_all.py`.
 
 ### Training
 
