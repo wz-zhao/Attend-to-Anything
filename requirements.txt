@@ -1,0 +1,17 @@
+einops
+easydict
+h5py
+matplotlib
+numpy
+opencv-python
+open_clip_torch
+pandas
+Pillow
+ptflops
+scikit-image
+scipy
+torch
+torchaudio
+torchvision
+tqdm
+xlsxwriter
