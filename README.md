@@ -332,13 +332,10 @@ AAM is trained on a unified collection of **image-based**, **video-based**, and 
 If you find this repository useful, please use the following BibTeX entry for citation and give us a star⭐.
 
 ```bibtex
-@misc{zhao2026attendanythingfoundationmodel,
-      title={Attend to Anything: Foundation Model for Unified Human Attention Modeling}, 
-      author={Wenzhuo Zhao and Ronghao Xian and Keren Fu and Qijun Zhao},
-      year={2026},
-      eprint={2606.03540},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2606.03540}, 
+@article{zhao2026attend,
+  title={Attend to Anything: Foundation Model for Unified Human Attention Modeling},
+  author={Zhao, Wenzhuo and Xian, Ronghao and Fu, Keren and Zhao, Qijun},
+  journal={arXiv preprint arXiv:2606.03540},
+  year={2026}
 }
 ```
